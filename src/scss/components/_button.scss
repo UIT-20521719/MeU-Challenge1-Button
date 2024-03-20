@@ -1,0 +1,111 @@
+.btn {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    border: none;
+    font-weight: 500;
+    font-size: medium;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px #3333332e;
+    margin-top: 10px;
+
+    &:hover, &:focus, &.hover {
+        filter: brightness(85%);   
+    }
+
+    &.fill {
+        &.default {
+            background-color: #E0E0E0;
+            color: #3F3F3F;
+        }
+        &.primary {
+            background-color: #2962FF;
+            color: #fff;
+        }
+        
+        &.secondary { 
+            background-color: #455A64;
+            color: #fff;
+        }    
+        &.danger {
+            background-color: #D32F2F;
+            color: #fff;
+        }
+    }
+
+    &.text {
+        border: none;
+        background-color: #fff;
+        &.default {
+            color: #3F3F3F;
+        }
+        &.primary {
+            color: #2962FF;
+        }
+        &.secondary {
+            color: #455A64;
+        }
+        &.danger {
+            color: #D32F2F;
+        }
+    }
+
+    &.outline {
+        border: 0.15rem solid;
+        &.default {
+            color: #3F3F3F;
+            border-color: #3F3F3F;
+        }
+        &.primary {
+            color: #2962FF;
+            border-color: #2962FF;
+        }
+        &.secondary {
+            color: #455A64;
+            border-color: #455A64;
+        }
+        &.danger {
+            color: #D32F2F;
+            border-color: #D32F2F;
+        }    
+    }
+
+    &.disabled {
+        opacity: 0.9;
+        &:hover {
+            cursor: not-allowed;
+            filter: brightness(100%);
+        }
+    }
+
+    &.sm {
+        padding: 0.5rem 0.8rem;
+    }
+
+    &.md {
+        padding: 0.6rem 1rem;
+    }
+
+    &.lg {
+        padding: 0.8rem 1.8rem;
+    }
+
+    &.disableShadow {
+        box-shadow: none !important;
+    }
+}
+    
+.startIcon {
+    width: 1 rem;
+    height: 1 rem;
+    margin-right: 0.3rem;
+}
+
+.endIcon {
+    width: 1 rem;
+    height: 1 rem;
+    margin-left: 0.3rem;
+}

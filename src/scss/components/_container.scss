@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__header {
+        margin: 15px 40px;
+        font-size: 30px;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: start;
+
+        &__item {
+            margin: 10px 0px 0px 40px;
+            min-width: 175px;
+
+            
+            p {
+                font-size: 12px !important;
+                &.hover {
+                    opacity: 0.6;
+                }    
+            }     
+        }
+    }
+
+    .footer {
+        justify-self: end;
+        align-self: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #A9A9A9;
+        font-size: 1rem;
+        margin: 10px;
+    }
+}
